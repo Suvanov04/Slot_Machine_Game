@@ -94,14 +94,14 @@ def get_number_of_lines():
 			else:
 				print("Please enter a valid number of lines. ")
 		else:
-			print("Please enter a number only.")
+			print("Please enter a number only .")
 
 	return lines
 
 
 def get_bet():
 	while True:
-		amount = input("How much would you like to bet on each line? $")
+		amount = input("How much would you like to bet on each line?  $")
 		if amount.isdigit():
 			amount = int(amount)
 			if MIN_BET <= amount <= MAX_BET:
@@ -141,7 +141,7 @@ def main():
 	balance = deposit()
 	while True:
 		print(f"Current balance is ${balance}")
-		answer = input("Press 'Enter' to play ('q' to quit).")
+		answer = input("Press 'Enter' to play ('q' to quit ).")
 		if answer == "q":
 			break
 		balance += spin(balance)
